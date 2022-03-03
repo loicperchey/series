@@ -2,7 +2,14 @@
 
 {% block body %}
     <section>
-        todo: afficher les series
+        //todo: afficher les series
+        {% for serie in series %}
+        <article>
+            <a href="#" title="View serie's details">
+                <img src="{{ asset('img/posters/series') }}" alt="{{ serie.name }}">
+            </a>
+        </article>
+        {% endfor %}
     </section>
 {% endblock %}
 
